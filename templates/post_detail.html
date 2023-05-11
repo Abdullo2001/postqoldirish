@@ -1,0 +1,10 @@
+{% extends 'base.html'%}
+
+{% block content %}
+<div>
+    <h1>{{post.title}}</h1>
+    <p>{{post.body}}</p>
+</div>
+
+<p><a style="border-radius: 100%; background-color: blue; display: inline-block; color: aliceblue; padding: 10px;" href="{% url 'post_update' post.pk %}">Update post</a></p>
+{% endblock content %}
